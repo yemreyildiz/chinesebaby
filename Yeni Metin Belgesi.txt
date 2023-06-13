@@ -1,0 +1,36 @@
+// Hedef tarih
+var hedefTarih = new Date("2023-12-31");
+
+// Şimdiki zaman
+var suAnkiZaman = new Date();
+
+// Zaman farkı hesaplama
+var zamanFarki = hedefTarih.getTime() - suAnkiZaman.getTime();
+
+// Gün hesaplama
+var kalanGun = Math.ceil(zamanFarki / (1000 * 60 * 60 * 24));
+
+// Sonuçları yazdırma
+console.log("Hedef tarihe " + kalanGun + " gün kaldı.");
+
+
+pyt
+
+from datetime import datetime
+
+# Hedef tarih
+hedef_tarih = datetime(2023, 12, 31)
+
+# Şimdiki zaman
+suanki_zaman = datetime.now()
+
+# Zaman farkı hesaplama
+zaman_farki = hedef_tarih - suanki_zaman
+
+# Gün hesaplama
+kalan_gun = zaman_farki.days
+
+# Sonuçları yazdırma
+print(f"Hedef tarihe {kalan_gun} gün kaldı.")
+
+
